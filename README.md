@@ -10,15 +10,15 @@ Welcome to my React learning repository! This is where I document everything I l
 - [x] What is React? Why use it?
 - [x] JSX (JavaScript XML)
 - [x] Function vs Class Components
-- [ ] Props
-- [ ] State with `useState`
-- [ ] Difference between props and state
+- [x] Props
+- [x] State with `useState`
+- [x] Difference between props and state
 
 ### Phase 2: Logic & Events
-- [ ] Conditional Rendering
-- [ ] Rendering Lists and Using Keys
-- [ ] Handling Events (onClick, onChange)
-- [ ] Passing Functions as Props
+- [x] Conditional Rendering
+- [x] Rendering Lists and Using Keys
+- [x] Handling Events (onClick, onChange)
+- [x] Passing Functions as Props
 
 ### Phase 3: Lifecycle & Side Effects
 - [ ] Component Lifecycle (understanding)
