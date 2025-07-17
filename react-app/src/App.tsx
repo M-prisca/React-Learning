@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <FaCalendarAlt />
+      <FaCalendarAlt color="blue" size={40} />
     </div>
 
     // <>
