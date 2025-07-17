@@ -5,26 +5,42 @@ import { useState } from "react";
 //import ListGroup from "./components/ListGroup/ListGroup";
 // import "./App.css";
 // import Like from "./components/Like";
-
 // import Message from "./Message";
 
 function App() {
-  const [tags, setTags] = useState(["happy", "cheerful"]);
+  const [bugs, setBugs] = useState([
+    { id: 1, title: "Bug1", fixed: false },
+    { id: 2, title: "Bug2", fixed: false },
+  ]);
 
   const handleClick = () => {
-    setTags([...tags, "exciting"]); //add
-
-    setTags(tags.filter((tag) => tag !== "happy")); // remove
-
-    setTags(tags.map((tag) => (tag === "happ" ? "happiness" : tag)));
+    setBugs(bugs.map((bug) => (bug.id === 1 ? { ...bug, fixed: true } : bug)));
   };
 
   return (
     <div>
-      <button onClick={handleClick}>Click me</button>
+      <button onClick={handleClick}>Click Me</button>
     </div>
   );
 }
+
+// function App() {
+//   const [tags, setTags] = useState(["happy", "cheerful"]);
+
+//   const handleClick = () => {
+//     setTags([...tags, "exciting"]); //add
+
+//     setTags(tags.filter((tag) => tag !== "happy")); // remove
+
+//     setTags(tags.map((tag) => (tag === "happ" ? "happiness" : tag)));
+//   };
+
+//   return (
+//     <div>
+//       <button onClick={handleClick}>Click me</button>
+//     </div>
+//   );
+// }
 
 // function App() {
 //   const [customer, setCustomer] = useState({
