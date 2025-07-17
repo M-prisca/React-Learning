@@ -7,22 +7,39 @@ import { useState } from "react";
 // import Like from "./components/Like";
 
 // import Message from "./Message";
-function App() {
-  const [drink, setDrink] = useState({
-    title: "Coke",
-    price: 1.99,
-  });
 
+function App() {
+  const [customer, setCustomer] = useState({
+    name: "prisca",
+    address: {
+      city: " kigali",
+      zipCode: 1123,
+    },
+  });
   const handleClick = () => {
-    setDrink({ ...drink, price: 3.99 });
+    setCustomer({
+      ...customer,
+      address: { ...customer.address, zipCode: 2345 },
+    });
   };
-  return (
-    <div>
-      {drink.price}
-      <button onClick={handleClick}>Update drink</button>
-    </div>
-  );
 }
+
+// function App() {
+//   const [drink, setDrink] = useState({
+//     title: "Coke",
+//     price: 1.99,
+//   });
+
+//   const handleClick = () => {
+//     setDrink({ ...drink, price: 3.99 });
+//   };
+//   return (
+//     <div>
+//       {drink.price}
+//       <button onClick={handleClick}>Update drink</button>
+//     </div>
+//   );
+// }
 
 //       <Message />
 //     </div>
