@@ -1,17 +1,27 @@
 // import { useState } from "react";
 // import Alert from "./components/Alert";
-import Button from "./components/Button/Button";
+// import Button from "./components/Button/Button";
 //import { FaCalendarAlt } from "react-icons/fa";
 //import ListGroup from "./components/ListGroup/ListGroup";
-import "./App.css";
+// import "./App.css";
+
+import Like from "./components/Like";
 
 function App() {
   // const [alertVisible, setAlertVisible] = useState(false);
 
   return (
-    <Button onClick={() => {}}>Click Me</Button>
+    <div>
+      <Like onClick={() => console.log("Liked!")} />
+    </div>
+    // <Button onClick={() => {}}>Click Me</Button>
     // <div>
     //   <FaCalendarAlt color="blue" size={40} />
+    // </div>
+    // <div>
+    //   {alertVisible && (
+    //     <Alert onClose={() => setAlertVisible(false)}> My Alert Message</Alert>
+    //   )}
     // </div>
 
     // <>
@@ -23,11 +33,6 @@ function App() {
     // </>
   );
 }
-<div>
-  {/* {alertVisible && (
-        <Alert onClose={() => setAlertVisible(false)}> My Alert Message</Alert>
-      )}
-      */}
-</div>;
+
 //
 export default App;
