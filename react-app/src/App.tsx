@@ -1,19 +1,32 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import Alert from "./components/Alert";
 // import Button from "./components/Button/Button";
 //import { FaCalendarAlt } from "react-icons/fa";
 //import ListGroup from "./components/ListGroup/ListGroup";
 // import "./App.css";
-
-import Like from "./components/Like";
+// import Like from "./components/Like";
 
 function App() {
   // const [alertVisible, setAlertVisible] = useState(false);
 
+  const [person, setPerson] = useState({
+    firstName: "",
+    lastName: "",
+    contact: {
+      address: {
+        street: "",
+        city: "",
+      },
+    },
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
   return (
-    <div>
-      <Like onClick={() => console.log("Liked!")} />
-    </div>
+    <div></div>
+
+    // <div>
+    //   <Like onClick={() => console.log("Liked!")} />
+    // </div>
     // <Button onClick={() => {}}>Click Me</Button>
     // <div>
     //   <FaCalendarAlt color="blue" size={40} />
