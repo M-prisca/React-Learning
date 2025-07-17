@@ -1,10 +1,5 @@
-function Message(){
-    const name = "prisca"
-    if (name) {
-    return <h1>Hello, {name}!</h1>;
-    }else {
-        return <h1>Hello, World!</h1>;
-    }
-
-}
+let count = 0;
+const Message = () => {
+  return <div>Message {count}</div>;
+};
 export default Message;
