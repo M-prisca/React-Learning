@@ -9,20 +9,38 @@ import { useState } from "react";
 // import Message from "./Message";
 
 function App() {
-  const [customer, setCustomer] = useState({
-    name: "prisca",
-    address: {
-      city: " kigali",
-      zipCode: 1123,
-    },
-  });
+  const [tags, setTags] = useState(["happy", "cheerful"]);
+
   const handleClick = () => {
-    setCustomer({
-      ...customer,
-      address: { ...customer.address, zipCode: 2345 },
-    });
+    setTags([...tags, "exciting"]); //add
+
+    setTags(tags.filter((tag) => tag !== "happy")); // remove
+
+    setTags(tags.map((tag) => (tag === "happ" ? "happiness" : tag)));
   };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  );
 }
+
+// function App() {
+//   const [customer, setCustomer] = useState({
+//     name: "prisca",
+//     address: {
+//       city: " kigali",
+//       zipCode: 1123,
+//     },
+//   });
+//   const handleClick = () => {
+//     setCustomer({
+//       ...customer,
+//       address: { ...customer.address, zipCode: 2345 },
+//     });
+//   };
+// }
 
 // function App() {
 //   const [drink, setDrink] = useState({
