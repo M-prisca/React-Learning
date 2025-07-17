@@ -1,21 +1,37 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import Alert from "./components/Alert";
 // import Button from "./components/Button/Button";
 //import { FaCalendarAlt } from "react-icons/fa";
 //import ListGroup from "./components/ListGroup/ListGroup";
 // import "./App.css";
 // import Like from "./components/Like";
-import Message from "./Message";
 
+// import Message from "./Message";
 function App() {
+  const [drink, setDrink] = useState({
+    title: "Coke",
+    price: 1.99,
+  });
+
+  const handleClick = () => {
+    const newDrink = {
+      title: drink.title,
+      price: 3.99,
+    };
+    setDrink(newDrink);
+  };
   return (
     <div>
-      <Message />
-      <Message />
-      <Message />
+      {drink.price}
+      <button onClick={handleClick}>Update drink</button>
     </div>
   );
 }
+
+//       <Message />
+//     </div>
+//   );
+// }
 
 // const [person, setPerson] = useState({
 //   firstName: "",
