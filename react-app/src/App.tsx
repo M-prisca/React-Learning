@@ -14,11 +14,7 @@ function App() {
   });
 
   const handleClick = () => {
-    const newDrink = {
-      ...drink,
-      price: 3.99,
-    };
-    setDrink(newDrink);
+    setDrink({ ...drink, price: 3.99 });
   };
   return (
     <div>
