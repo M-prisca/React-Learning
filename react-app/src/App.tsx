@@ -6,36 +6,48 @@ import { useState } from "react";
 // import "./App.css";
 // import Like from "./components/Like";
 // import Message from "./Message";
-import { produce } from "immer";
+// import { produce } from "immer";
+import Cart from "./components/Cart";
+import NavBar from "./components/NavBar";
 
 function App() {
-  const [bugs, setBugs] = useState([
-    { id: 1, title: "Bug1", fixed: false },
-    { id: 2, title: "Bug2", fixed: false },
-  ]);
-
-  const handleClick = () => {
-    // setBugs(bugs.map((bug) => (bug.id === 1 ? { ...bug, fixed: true } : bug)));
-    setBugs(
-      produce((draft) => {
-        const bug = draft.find((bug) => bug.id === 1);
-        if (bug) bug.fixed = true;
-      })
-    );
-  };
-
+  const [cartItems, setCartItems] = useState(["Product1", "Product2"]);
   return (
     <div>
-      {bugs.map((bug) => (
-        <div key={bug.id}>
-          {" "}
-          {bug.title} {bug.fixed ? "fixed" : "New"}
-        </div>
-      ))}
-      <button onClick={handleClick}>Click Me</button>
+      <NavBar cartItemsCount={cartItems.length} />
+      <Cart cartItems={cartItems} onClear={() => setCartItems([])} />
     </div>
   );
 }
+
+// function App() {
+//   const [bugs, setBugs] = useState([
+//     { id: 1, title: "Bug1", fixed: false },
+//     { id: 2, title: "Bug2", fixed: false },
+//   ]);
+
+//   const handleClick = () => {
+//     // setBugs(bugs.map((bug) => (bug.id === 1 ? { ...bug, fixed: true } : bug)));
+//     setBugs(
+//       produce((draft) => {
+//         const bug = draft.find((bug) => bug.id === 1);
+//         if (bug) bug.fixed = true;
+//       })
+//     );
+//   };
+
+//   return (
+//     <div>
+//       {bugs.map((bug) => (
+//         <div key={bug.id}>
+//           {" "}
+//           {bug.title} {bug.fixed ? "fixed" : "New"}
+//         </div>
+//       ))}
+//       <button onClick={handleClick}>Click Me</button>
+//     </div>
+//   );
+// }
 
 // function App() {
 //   const [tags, setTags] = useState(["happy", "cheerful"]);
