@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { use, useState } from "react";
 // import Alert from "./components/Alert";
 // import Button from "./components/Button/Button";
 //import { FaCalendarAlt } from "react-icons/fa";
@@ -11,18 +11,17 @@ import { useState } from "react";
 // import NavBar from "./components/NavBar";
 
 function App() {
-  const [game, setGame] = useState({
-    id: 1,
-    player: {
-      name: "Prisca",
-    },
+  const [pizza, setPizza] = useState({
+    name: "spicy Pepperoni",
+    toppings: ["mushroom"],
   });
   const handleClick = () => {
-    setGame({ ...game, player: { ...game.player, name: "Pika" } });
+    setPizza({ ...pizza, name: "spicy pizza" });
   };
   return (
     <div>
-      <p>{game.player.name}</p>
+      <p>Pizza Name: {pizza.name}</p>
+      <p>Toppings:{pizza.toppings.join(", ")}</p>
       <button onClick={handleClick}>Change Name</button>
     </div>
   );
