@@ -12,17 +12,21 @@ import { use, useState } from "react";
 
 function App() {
   const [pizza, setPizza] = useState({
-    name: "spicy Pepperoni",
+    name: "Spicy Pepperoni",
     toppings: ["mushroom"],
   });
   const handleClick = () => {
-    setPizza({ ...pizza, name: "spicy pizza" });
+    setPizza({
+      ...pizza,
+      // name: "spicy pizza",
+      toppings: [...pizza.toppings, "cheese"],
+    });
   };
   return (
     <div>
       <p>Pizza Name: {pizza.name}</p>
       <p>Toppings:{pizza.toppings.join(", ")}</p>
-      <button onClick={handleClick}>Change Name</button>
+      <button onClick={handleClick}>Add </button>
     </div>
   );
 }
