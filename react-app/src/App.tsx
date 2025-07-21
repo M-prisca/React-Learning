@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 // import Alert from "./components/Alert";
 // import Button from "./components/Button/Button";
 //import { FaCalendarAlt } from "react-icons/fa";
@@ -26,7 +26,7 @@ function App() {
     <div>
       <p>Pizza Name: {pizza.name}</p>
       <p>Toppings:{pizza.toppings.join(", ")}</p>
-      <button onClick={handleClick}>Add </button>
+      <button onClick={handleClick}>Add</button>
     </div>
   );
 }
