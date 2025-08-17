@@ -1,12 +1,73 @@
-# React + Vite
+# React Learning Journey
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my React learning repository! This is where I document everything I learn about React — from fundamentals to advanced concepts — through theory, small projects, and practice exercises.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Roadmap
 
-## Expanding the ESLint configuration
+### Phase 1: Core Fundamentals
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] What is React? Why use it?
+- [x] JSX (JavaScript XML)
+- [x] Function vs Class Components
+- [x] Props
+- [x] State with `useState`
+- [x] Difference between props and state
+
+### Phase 2: Logic & Events
+
+- [x] Conditional Rendering
+- [x] Rendering Lists and Using Keys
+- [x] Handling Events (onClick, onChange)
+- [x] Passing Functions as Props
+
+### Phase 3: Lifecycle & Side Effects
+
+- [ ] Component Lifecycle (understanding)
+- [ ] useEffect and Dependency Arrays
+- [ ] Cleanup Functions in useEffect
+
+### Phase 4: Structure & Styling
+
+- [ ] Component Folder Structure
+- [ ] Styling Approaches (CSS Modules, Tailwind)
+
+### Phase 5: State Management
+
+- [ ] Lifting State Up
+- [ ] Prop Drilling
+- [ ] React Context API
+
+### Phase 6: Routing & Advanced Hooks
+
+- [ ] React Router Basics
+- [ ] useRef
+- [ ] useMemo
+- [ ] useCallback
+- [ ] Custom Hooks
+
+### Phase 7: Best Practices & Tools
+
+- [ ] Component Best Practices
+- [ ] Strict Mode
+- [ ] React Dev Tools
+- [ ] Error Boundaries
+
+### Advanced Topics
+
+- [ ] TypeScript with React
+- [ ] React Testing (Jest + RTL)
+- [ ] Performance Optimization
+- [ ] React Query / TanStack Query
+- [ ] Redux Toolkit
+
+## Inspiration
+
+This repo is part of my learning journey in **The Gym Software Engineering Program** and my personal goal to become a strong React developer. Follow my journey and feel free to contribute or suggest improvements!
+
+---
+
+## Feedback
+
+If you notice any mistake or want to recommend a resource, feel free to open an issue or pull request!
